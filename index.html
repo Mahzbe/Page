@@ -21,13 +21,20 @@
 
     header h1 {
       font-size: 3em;
-      margin: 0;
+      margin: 10px 0;
     }
 
     header p {
       font-size: 1.2em;
       margin-top: 10px;
       font-style: italic;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
     }
 
     .content {
@@ -70,6 +77,11 @@
     .episode {
       margin: 10px 0;
       font-size: 1.1em;
+      text-align: left;
+    }
+
+    .audio-player {
+      margin: 10px 0;
     }
 
     .blog-post {
@@ -104,6 +116,7 @@
 </head>
 <body>
   <header>
+    <img src="page.png" alt="Page Podcast Logo">
     <h1>Page Podcast</h1>
     <p>Your soundtrack to the cosmic chill.</p>
   </header>
@@ -115,9 +128,33 @@
 
     <!-- Music Episodes Section -->
     <div id="music-episodes" class="episodes">
-      <div class="episode">Episode 1: Chill Vibes - Ambient Grooves</div>
-      <div class="episode">Episode 2: Midnight Waves - Psychedelic Relaxation</div>
-      <div class="episode">Episode 3: Cosmic Drift - Lo-fi Chill Beats</div>
+      <div class="episode">
+        <h4>Episode 1: Psychedelic Grooves</h4>
+        <div class="audio-player">
+          <audio controls>
+            <source src="episode1psychedelic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="episode">
+        <h4>Episode 2: Midnight Waves</h4>
+        <div class="audio-player">
+          <audio controls>
+            <source src="episode2midnight.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="episode">
+        <h4>Episode 3: Cosmic Drift</h4>
+        <div class="audio-player">
+          <audio controls>
+            <source src="episode3cosmic.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
     </div>
 
     <h2>Blog Posts</h2>
