@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Podcast</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(120deg, #2e7d32, #4caf50);
+      color: #f5f5f5;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin: 20px 0;
+      font-size: 2em;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: #f5f5f5;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #4caf50;
+      color: #000;
+    }
+
+    .episodes {
+      display: none;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .episode {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    .blog-post {
+      background: rgba(0, 0, 0, 0.5);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .blog-post h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .blog-post p {
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Page Podcast</h1>
+    <p>Your soundtrack to the cosmic chill.</p>
+  </header>
+
+  <div class="content">
+    <h2>Chill Music Episodes</h2>
+    <!-- Button to show music episodes -->
+    <button class="button" onclick="toggleEpisodes('music-episodes')">Chill Music Episodes</button>
+
+    <!-- Music Episodes Section -->
+    <div id="music-episodes" class="episodes">
+      <div class="episode">Episode 1: Chill Vibes - Ambient Grooves</div>
+      <div class="episode">Episode 2: Midnight Waves - Psychedelic Relaxation</div>
+      <div class="episode">Episode 3: Cosmic Drift - Lo-fi Chill Beats</div>
+    </div>
+
+    <h2>Blog Posts</h2>
+    <!-- Blog Post Section -->
+    <div class="blog-post">
+      <h3>Exploring the Art of Chill Beats</h3>
+      <p>Chill music has become a staple in the cannabis community, offering relaxation and mental escape. In this post, we dive into the evolution of chill beats, their cultural significance, and how they provide a backdrop for moments of introspection and relaxation...</p>
+    </div>
+
+    <div class="blog-post">
+      <h3>The Perfect Playlist for Your Next Chill Session</h3>
+      <p>Whether you're lounging with friends or enjoying a solo moment, the right music can set the tone. We share the top tracks that blend ambient sounds with mellow vibes, creating the ultimate playlist for unwinding after a long day...</p>
+    </div>
+
+    <h2>Follow Us</h2>
+    <!-- Facebook Link -->
+    <a href="https://www.facebook.com/profile.php?id=100076258981389" class="button" target="_blank">Follow on Facebook</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Page Podcast. Created with chill vibes. <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script>
+    // Function to toggle the visibility of episodes
+    function toggleEpisodes(sectionId) {
+      var episodes = document.getElementById(sectionId);
+      // Toggle the display of the episodes section
+      if (episodes.style.display === "none" || episodes.style.display === "") {
+        episodes.style.display = "block";
+      } else {
+        episodes.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
